@@ -6,19 +6,26 @@
     <title>Book Catalog Search</title>
 </head>
 <body>
-    <h1>Book Catalog Search</h1>
-    <!-- A HTML form to allow user requests a search for the book. -->
-    <!-- TODO 1: Fill in the action of the form with "results.php" and 
-                 the form data is sent with the HTTP POST method. -->
-    <form action="" method="">
-        Choose Search Type: <br>
-        <!-- TODO 2: Add a drop-down list, named it as "searchtype" 
-                     of 3 options which are "author", "title" and "isbn". -->
-        <br>
-        Enter Search Term:<br>
-        <!-- TODO 3: Add an input type of text box, named it as "searchterm", set the size to 40. --> 
-        <br>
-        <!-- TODO 4: Add a submit button, named it as "submit", set the display text as "Search".  -->
-    </form>
+<h1>Book Catalog Search</h1>
+<!-- A HTML form to allow user requests a search for the book. -->
+<!-- TODO 1: Fill in the action of the form with "results.php" and
+             the form data is sent with the HTTP POST method. -->
+<form action="results.php" method="post">
+    Choose Search Type: <br>
+    <!-- TODO 2: Add a drop-down list, named it as "searchtype"
+                 of 3 options which are "author", "title" and "isbn". -->
+    <select name="searchtype">
+        <option>author</option>
+        <option>title</option>
+        <option>isbn</option>
+    </select>
+    <br>
+    Enter Search Term:<br>
+    <!-- TODO 3: Add an input type of text box, named it as "searchterm", set the size to 40. -->
+    <input type="text" size="40" name="searchterm">
+    <br>
+    <!-- TODO 4: Add a submit button, named it as "submit", set the display text as "Search".  -->
+    <button type="submit" name="submit">Search</button>
+</form>
 </body>
 </html>

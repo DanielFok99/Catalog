@@ -9,7 +9,9 @@
     <h1>Book Search Results</h1>
     <?php
     // TODO 1: Create short variable names.
-
+    $author = '';
+    $title = '';
+    $isbn = '';
 
     // TODO 2: Check and filter data coming from the user.
 

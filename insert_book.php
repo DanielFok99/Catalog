@@ -18,6 +18,8 @@ $title = '';
 // TODO 2: Check and filter data coming from the user.
 
 if (isset($_POST['isbn']) && isset($_POST['author']) && isset($_POST['title']) && isset($_POST['price'])) {
+    echo 'test';
+
     $isbn = htmlspecialchars($_POST['isbn']);
     $author = htmlspecialchars($_POST['author']);
     $title = htmlspecialchars($_POST['title']);
@@ -42,7 +44,7 @@ $result = $conn->query("INSERT INTO catalogs(isbn,author,title,price) VALUES ('$
 
 // TODO 5: Display the feedback back to user.
 
-if ($result){
+if ($result) {
     echo '<p>Book has insert successfully</p>';
 }
 
